@@ -26,19 +26,23 @@ export function ProfileSection() {
     <motion.section
       ref={sectionRef}
       style={{ opacity }}
-      className="relative py-10 px-6 overflow-hidden"
+      className="relative min-h-screen py-10 px-6 overflow-hidden"
     >
-      <motion.div style={{ y: bgY }} className="absolute inset-0">
+      <motion.div 
+        style={{ y: bgY }} 
+        className="absolute inset-0 overflow-hidden"
+      >
         <img
           src="/images/zafran-closeup.png"
           alt="Background image continuing from hero"
-          className="w-full h-full object-cover"
+          className="w-full h-500 object-cover object-center min-h-[190vh] min-w-[120vw]" 
+          style={{ objectPosition: 'center' }}
         />
         <div className="absolute inset-0 bg-linear-to-b from-black via-black/70 to-black/70" />
       </motion.div>
 
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-linear-to-br from-amber-950/40 via-black/50 to-rose-950/30" />
+        <div className="absolute inset-0 bg-linear-to-br from-gray-950/40 via-black/50 to-rose-950/10" />
         <motion.div
           animate={{
             backgroundPosition: ["0% 0%", "100% 100%"],
@@ -51,7 +55,7 @@ export function ProfileSection() {
           className="absolute inset-0 opacity-20"
           style={{
             backgroundImage:
-              "radial-gradient(circle at 50% 50%, rgba(251, 191, 36, 0.1) 0%, transparent 50%)",
+              "radial-gradient(circle at 50% 50%, 0%, transparent 50%)",
             backgroundSize: "200% 200%",
           }}
         />

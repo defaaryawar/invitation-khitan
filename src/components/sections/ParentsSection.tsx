@@ -62,7 +62,7 @@ export function ParentsSection() {
           whileInView={{ scaleX: 1 }}
           viewport={{ once: false }}
           transition={{ duration: 0.8 }}
-          className="w-16 h-px bg-linear-to-r from-transparent via-amber-400 to-transparent mx-auto mb-8"
+          className="w-16 h-px bg-linear-to-r from-transparent via-gray-300 to-transparent mx-auto mb-8"
         />
 
         <h2 className="text-2xl md:text-3xl font-serif italic text-white mb-4">Orang Tua</h2>
@@ -75,7 +75,7 @@ export function ParentsSection() {
           whileInView={{ scaleX: 1 }}
           viewport={{ once: false }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="w-16 h-px bg-linear-to-r from-transparent via-amber-400 to-transparent mx-auto mt-8"
+          className="w-16 h-px bg-linear-to-r from-transparent via-gray-400 to-transparent mx-auto mt-8"
         />
       </div>
 

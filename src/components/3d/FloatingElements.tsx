@@ -1,15 +1,6 @@
 import { motion } from "framer-motion";
 
 const FloatingElements = () => {
-  const floatingAnimation = {
-    y: [0, -20, 0],
-    rotate: [0, 5, 0],
-    transition: {
-      duration: 4,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  };
 
   const ornaments = [
     { id: 1, size: "w-20 h-20", top: "10%", left: "5%", delay: 0, color: "bg-accent/20" },

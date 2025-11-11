@@ -56,7 +56,7 @@ export default function ProfileContent() {
                 whileInView={{ scaleX: 1 }}
                 viewport={{ once: false, amount: 0.5 }}
                 transition={{ duration: 0.4, delay: 0.2 }}
-                className="w-16 h-px bg-amber-400 mt-6 mb-8 mx-auto"
+                className="w-16 h-px bg-gray-400 mt-6 mb-8 mx-auto"
               />
             </div>
 

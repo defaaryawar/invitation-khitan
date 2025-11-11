@@ -4,6 +4,7 @@ import { useState } from "react";
 import CoverScreen from "./components/sections/CoverScreen";
 import HeroSection from "./components/sections/HeroSection";
 import { ProfileSection } from "./components/sections/ProfileSection";
+import CountdownSection from "./components/sections/CountdownSection";
 
 function App() {
   const [isCoverOpen, setIsCoverOpen] = useState(false);
@@ -19,6 +20,7 @@ function App() {
         <>
           <HeroSection />
           <ProfileSection />
+          <CountdownSection />
         </>
       )}
     </div>
