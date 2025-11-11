@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { ProfileHeader } from "./ProfileHeader";
-import  ProfileContent  from "./ProfileContent";
+import ProfileContent from "./ProfileContent";
 import { ParentsSection } from "./ParentsSection";
 import { QuranSection } from "./QuranSection";
 
@@ -28,17 +28,14 @@ export function ProfileSection() {
       style={{ opacity }}
       className="relative min-h-screen py-10 px-6 overflow-hidden"
     >
-      <motion.div 
-        style={{ y: bgY }} 
-        className="absolute inset-0 overflow-hidden"
-      >
+      <motion.div style={{ y: bgY }} className="absolute inset-0 overflow-hidden">
         <img
           src="/images/zafran-closeup.png"
           alt="Background image continuing from hero"
-          className="w-full h-500 object-cover object-center min-h-[190vh] min-w-[120vw]" 
-          style={{ objectPosition: 'center' }}
+          className="w-full h-full object-cover object-center min-h-[190vh] min-w-[120vw]"
+          style={{ objectPosition: "center" }}
         />
-        <div className="absolute inset-0 bg-linear-to-b from-black via-black/70 to-black/70" />
+        <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/40 to-black" />
       </motion.div>
 
       <div className="absolute inset-0">
@@ -54,8 +51,7 @@ export function ProfileSection() {
           }}
           className="absolute inset-0 opacity-20"
           style={{
-            backgroundImage:
-              "radial-gradient(circle at 50% 50%, 0%, transparent 50%)",
+            backgroundImage: "radial-gradient(circle at 50% 50%, 0%, transparent 50%)",
             backgroundSize: "200% 200%",
           }}
         />

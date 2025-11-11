@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import type { ParentCardProps } from "../../types";
 
-function ParentCard({ name, role, image, alt, delay }: ParentCardProps) {
+function ParentCard({ name, image, alt, delay }: ParentCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -11,7 +11,7 @@ function ParentCard({ name, role, image, alt, delay }: ParentCardProps) {
       className="group"
     >
       <div className="relative overflow-hidden rounded-3xl">
-        <div className="relative h-[500px] overflow-hidden">
+        <div className="relative h-[400px] overflow-hidden">
           <img
             src={image}
             alt={alt}
@@ -32,9 +32,6 @@ function ParentCard({ name, role, image, alt, delay }: ParentCardProps) {
               viewport={{ once: false }}
               transition={{ duration: 0.6, delay: delay + 0.2 }}
             >
-              <div className="inline-block px-4 py-1 bg-white/20 backdrop-blur-md border border-white/30 text-white text-sm rounded-full mb-3 tracking-wider">
-                {role}
-              </div>
               <h3 className="text-2xl font-serif italic text-white mb-2">{name}</h3>
             </motion.div>
           </div>
