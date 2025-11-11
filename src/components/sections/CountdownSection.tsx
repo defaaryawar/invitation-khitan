@@ -67,9 +67,7 @@ export default function CountdownLocationSection() {
   return (
     <section ref={sectionRef} className="relative h-[400vh]">
       {" "}
-      {/* Tinggi lebih untuk efek scroll panjang */}
       <motion.div className="sticky top-0 h-screen overflow-hidden px-6">
-        {/* Background dengan efek gila: gradient animasi dan particles ringan */}
         <motion.div
           style={{ y: bgY, scale: bgScale }}
           className="absolute inset-0 bg-linear-to-br from-black via-purple-900/10 to-black"
@@ -137,7 +135,7 @@ export default function CountdownLocationSection() {
                     <motion.div
                       animate={{ opacity: [0.3, 0.8, 0.3] }}
                       transition={{ duration: 2, repeat: Infinity, delay: index * 0.5 }}
-                      className="absolute inset-0 bg-linear-to-r from-purple-500/10 to-blue-500/20 rounded-xl"
+                      className="absolute inset-0 bg-linear-to-r from-purple-200/10 to-blue-100/20 rounded-xl"
                     />
                     <motion.div
                       key={unit.value}
@@ -166,7 +164,7 @@ export default function CountdownLocationSection() {
                 initial={{ opacity: 0, y: 100, rotateX: -45 }}
                 whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
                 transition={{ duration: 0.8, type: "spring", stiffness: 80 }}
-                className="bg-black/70 backdrop-blur-xl rounded-3xl p-8 border border-gray-600 shadow-2xl relative overflow-hidden"
+                className="bg-black/70 backdrop-blur-xl rounded-3xl p-8 shadow-2xl relative overflow-hidden"
               >
                 {/* Animated border glow */}
                 <motion.div
@@ -197,7 +195,7 @@ export default function CountdownLocationSection() {
                     Yayasan Darul Marfu', Jl. H. Zainuddin No.43 5, RT.5/RW.14, Gandaria Utara, Kec.
                     Kby. Baru, Kota Jakarta Selatan
                   </p>
-                  <p className="text-gray-300 mt-2">Sabtu, 28 Desember 2025 • 10:00 WIB</p>
+                  <p className="text-gray-300 mt-2">Sabtu, 28 Desember 2025</p>
                 </div>
                 <div className="flex justify-center">
                   <motion.button
