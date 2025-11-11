@@ -15,7 +15,7 @@ function LocationSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen py-20 px-6 bg-gradient-to-b from-white via-amber-50/30 to-white"
+      className="relative min-h-screen py-20 px-6 bg-linear-to-b from-white via-amber-50/30 to-white"
     >
       <motion.div style={{ opacity, y }} className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
