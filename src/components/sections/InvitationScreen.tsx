@@ -48,7 +48,7 @@ export function InvitationScreen({ isOpen, onOpen }: InvitationScreenProps) {
               <h1 className="text-5xl font-serif text-white mb-4 tracking-wide">Khitanan</h1>
               <div className="w-24 h-px bg-linear-to-r from-transparent via-white/40 to-transparent mx-auto mb-6" />
               <h2 className="text-3xl font-light text-white/95 tracking-wide">
-                Zafran Sandik Kristianto
+                Zafran Sandi Kristianto
               </h2>
             </motion.div>
 
