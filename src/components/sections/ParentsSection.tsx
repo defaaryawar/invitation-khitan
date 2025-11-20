@@ -8,22 +8,18 @@ function ParentCard({ name, image, alt, delay }: ParentCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false }}
       transition={{ duration: 0.8, delay }}
-      className="group"
     >
       <div className="relative overflow-hidden rounded-3xl">
-        <div className="relative h-[400px] overflow-hidden">
+        <div className="relative h-[400px] md:h-[600px] overflow-hidden">
           <img
             src={image}
             alt={alt}
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            className="w-full h-full object-cover transition-transform duration-700 md:hover:scale-110"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent" />
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileHover={{ opacity: 1 }}
-            className="absolute inset-0 bg-amber-400/10"
-          />
+          {/* REMOVED whileHover - ini penyebab utama masalah lo! */}
 
           <div className="absolute inset-0 p-8 flex flex-col justify-end">
             <motion.div
@@ -37,8 +33,8 @@ function ParentCard({ name, image, alt, delay }: ParentCardProps) {
           </div>
         </div>
 
-        <div className="absolute top-4 right-4 w-12 h-12 border-t border-r border-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-        <div className="absolute bottom-4 left-4 w-12 h-12 border-b border-l border-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        <div className="absolute top-4 right-4 w-12 h-12 border-t border-r border-white/20 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500" />
+        <div className="absolute bottom-4 left-4 w-12 h-12 border-b border-l border-white/20 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500" />
       </div>
     </motion.div>
   );
@@ -80,7 +76,7 @@ export function ParentsSection() {
         <ParentCard
           name="Bapak Warsiyanto & Ibu Dwi Pratiwi"
           role="Orang Tua"
-          image="/images/ortu.jpg"
+          image="/images/ortu.webp"
           alt="Portrait of parents together in formal attire with warm and loving expressions"
           delay={0.3}
         />

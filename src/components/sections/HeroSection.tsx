@@ -28,7 +28,7 @@ export default function HeroSection() {
         <div ref={contentRef} className="absolute inset-0 overflow-hidden bg-black">
           <div className="absolute inset-0">
             <img
-              src="/images/zafran-closeup.png"
+              src="/images/zafran-closeup.webp"
               alt="Close-up portrait of a young boy with a bright smile in traditional ceremonial clothing"
               className="w-full h-full object-cover"
               onLoad={() => setImageLoaded(true)}

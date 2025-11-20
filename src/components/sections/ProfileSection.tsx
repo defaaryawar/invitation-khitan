@@ -30,7 +30,7 @@ export function ProfileSection() {
     >
       <motion.div style={{ y: bgY }} className="absolute inset-0 overflow-hidden">
         <img
-          src="/images/zafran-closeup.png"
+          src="/images/zafran-closeup.webp"
           alt="Background image continuing from hero"
           className="w-full h-full object-cover object-center min-h-[190vh] min-w-[120vw]"
           style={{ objectPosition: "center" }}

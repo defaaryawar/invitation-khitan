@@ -83,7 +83,7 @@ export function BrandingScreen({ onComplete }: BrandingScreenProps) {
             initial={{ opacity: 0, letterSpacing: "0.1em" }}
             animate={{ opacity: 1, letterSpacing: "0.5em" }}
             transition={{ duration: 1, delay: 0.8 }}
-            className="text-sm text-white/60 uppercase tracking-[0.5em] mb-4"
+            className="text-md text-white/60 uppercase tracking-[0.5em] mb-4"
             style={{
               textShadow: "0 0 20px rgba(255,255,255,0.05)",
             }}
