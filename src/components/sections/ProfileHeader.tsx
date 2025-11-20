@@ -27,7 +27,7 @@ export function ProfileHeader() {
           Mengenal Lebih Dekat
         </p>
         <h1 className="text-3xl md:text-4xl font-serif italic text-white mb-4 tracking-wide">
-          Profil Anak
+          Who is Zafran?
         </h1>
       </motion.div>
 

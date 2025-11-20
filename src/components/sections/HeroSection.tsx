@@ -61,7 +61,7 @@ export default function HeroSection() {
                     Zafran
                   </h1>
                   <h2 className="text-2xl md:text-3xl font-serif italic text-white/90 drop-shadow-2xl">
-                    Sandik Kristianto
+                    Sandi Kristianto
                   </h2>
                 </motion.div>
 
