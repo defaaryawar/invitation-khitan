@@ -45,7 +45,7 @@ export default function ProfileContent() {
                 transition={{ duration: 0.4, delay: 0.15 }}
               >
                 <h3 className="text-3xl md:text-4xl font-serif italic text-white mb-2">Zafran</h3>
-                <p className="text-lg text-white/70 font-light">Sandik Kristianto</p>
+                <p className="text-lg text-white/70 font-light">Sandi Kristianto</p>
                 <p className="text-sm text-white/70 font-light mt-2">
                   Putra dari Bapak Warsiyanto dan Ibu Dwi Pratiwi
                 </p>
