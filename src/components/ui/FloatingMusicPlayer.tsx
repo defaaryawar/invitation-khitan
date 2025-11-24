@@ -33,7 +33,7 @@ const FloatingMusicPlayer = forwardRef<FloatingMusicPlayerHandle, MusicPlayerPro
     const timeoutRef = useRef<number | null>(null);
 
     // Song data
-    const songUrl = "src/assets/songs/mejikuhibiniu.mp3";
+    const songUrl = "/songs/mejikuhibiniu.mp3";
     const songTitle = "Mejikuhibiniu";
     const artistName = "Tenxi, Suisei & Jemsii";
 
