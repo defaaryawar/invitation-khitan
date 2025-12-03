@@ -70,7 +70,6 @@ export default function CountdownSection() {
         className="relative bg-linear-to-b from-black via-gray-900/30 to-black py-0 sm:py-6"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Countdown Section */}
           <div className="max-w-5xl mx-auto mb-20 sm:mb-32">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
@@ -101,7 +100,7 @@ export default function CountdownSection() {
                 className="text-white/80 text-lg sm:text-xl mb-2 flex items-center justify-center gap-2"
               >
                 <Calendar className="w-5 h-5" />
-                <span>Sabtu, 28 Desember 2025</span>
+                <span>Minggu, 28 Desember 2025</span>
               </motion.p>
 
               <motion.p
@@ -111,7 +110,7 @@ export default function CountdownSection() {
                 className="text-white/60 text-sm sm:text-base flex items-center justify-center gap-2"
               >
                 <Clock className="w-4 h-4" />
-                <span>10:00 WIB</span>
+                <span>10:00 - 16:00 WIB</span>
               </motion.p>
 
               <motion.div
@@ -122,7 +121,6 @@ export default function CountdownSection() {
               />
             </motion.div>
 
-            {/* Countdown Cards */}
             {isExpired ? (
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -152,12 +150,10 @@ export default function CountdownSection() {
                         !isMobile ? "hover:bg-white/10 hover:border-white/20" : ""
                       }`}
                     >
-                      {/* Subtle glow on hover - only desktop */}
                       {!isMobile && (
                         <div className="absolute inset-0 bg-linear-to-br from-white/0 via-white/0 to-white/0 opacity-0 group-hover:opacity-10 transition-opacity duration-500" />
                       )}
 
-                      {/* Number */}
                       <motion.div
                         key={unit.value}
                         initial={{ scale: 1 }}
@@ -171,7 +167,6 @@ export default function CountdownSection() {
                         {String(unit.value).padStart(2, "0")}
                       </motion.div>
 
-                      {/* Label */}
                       <div className="relative text-xs sm:text-sm text-white/60 uppercase tracking-wider">
                         {unit.label}
                       </div>
@@ -183,7 +178,6 @@ export default function CountdownSection() {
           </div>
         </div>
 
-        {/* Decorative floating elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {Array.from({ length: 6 }, (_, i) => (
             <motion.div
@@ -208,7 +202,6 @@ export default function CountdownSection() {
         </div>
       </section>
 
-      {/* Location Section - Lazy loaded */}
       <motion.div
         ref={mapSectionRef}
         initial={{ opacity: 0 }}
@@ -224,10 +217,8 @@ export default function CountdownSection() {
             className="max-w-2xl mx-auto"
           >
             <div className="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 sm:p-8 lg:p-10 overflow-hidden">
-              {/* Subtle decorative gradient */}
               <div className="absolute inset-0 bg-linear-to-br from-white/5 via-transparent to-white/5 opacity-50" />
 
-              {/* Content */}
               <div className="relative">
                 <motion.div
                   initial={{ scale: 0, opacity: 0 }}
@@ -267,7 +258,7 @@ export default function CountdownSection() {
                     Kby. Baru, Kota Jakarta Selatan
                   </p>
                   <p className="text-white/70 text-sm sm:text-base mt-4">
-                    Sabtu, 28 Desember 2025 • 10:00 WIB
+                    Minggu, 28 Desember 2025 • 10:00 - 16:00 WIB
                   </p>
                 </motion.div>
 
@@ -283,7 +274,6 @@ export default function CountdownSection() {
                       !isMobile ? "hover:bg-white/15 hover:border-white/30" : ""
                     }`}
                   >
-                    {/* Shimmer effect - hanya desktop */}
                     {!isMobile && (
                       <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-linear-to-r from-transparent via-white/10 to-transparent" />
                     )}
@@ -299,7 +289,6 @@ export default function CountdownSection() {
           </motion.div>
         </div>
 
-        {/* Decorative floating elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {Array.from({ length: 6 }, (_, i) => (
             <motion.div
