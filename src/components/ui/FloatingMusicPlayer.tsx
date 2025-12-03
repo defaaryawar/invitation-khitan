@@ -33,9 +33,9 @@ const FloatingMusicPlayer = forwardRef<FloatingMusicPlayerHandle, MusicPlayerPro
     const timeoutRef = useRef<number | null>(null);
 
     // Song data
-    const songUrl = "/songs/tasbehlena.mp3";
-    const songTitle = "Nas Tasbehlena";
-    const artistName = "Maher Zain";
+    const songUrl = "/songs/putro-nusontoro.mp3";
+    const songTitle = "Putro Nuswantoro";
+    const artistName = "Manthous";
 
     // Detect mobile
     useEffect(() => {
